@@ -9,7 +9,9 @@
 @color_w: #fff;
 @color_title:#2d2b2c;
 @color_text: #2d2b2c;
+@color_bg:#eef1f6;
 @color_flat_b:#3f797a;
+@color_flat_red:#ec7964;
 
 .no-svg{}
 html{
@@ -23,6 +25,7 @@ html{
 }
 body{
 	overflow-x: hidden;
+	background: @color_bg;
 	font-family: @roboto;
 	color: @color_text;
 	font-size: 18px;
@@ -36,6 +39,15 @@ a{
 	&:hover{
 		color:  #9db4c4;
 		text-decoration: underline;
+	}
+	&:focus{
+		text-decoration: none;
+	}
+	&:active{
+		text-decoration: none;
+	}
+	&:visited{
+		text-decoration: none;
 	}
 }
 .clear{
@@ -74,7 +86,8 @@ img{
 	user-select: none;
 
 	border-radius: 3px;
-	background:  #ec7964;
+	border-bottom: 4px solid #df6751;
+	background: @color_flat_red;
 	width: 320px;
 	height: 60px;
 
@@ -86,6 +99,10 @@ img{
 	line-height: 32px;
 
 	z-index: 84;
+	&:hover{
+		color: @color_w;
+		background: #f58d7a;
+	}
 }
 .btn:active{
 	top: 1px;

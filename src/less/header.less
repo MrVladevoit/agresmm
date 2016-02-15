@@ -1,0 +1,86 @@
+// header
+.header{
+	padding: 12px 0;
+	.logo{
+		margin-left: 77px;
+	}
+	.link_block{
+		position: relative;
+		top: 27px;
+		left: 57px;
+		text-align: center;
+		.btn{
+			width: 259px;
+			height: 53px;
+			font-size: 16px;
+			line-height: 34px;
+			&:focus{
+				color:@color_w;
+			}
+			&:visited{
+				color:@color_w;
+			}
+		}
+	}
+	.contacts{
+		padding: 22px 75px 0 0;
+		text-align: right;
+		a{
+			color: #3f797a;
+			font-size: 22px;
+			line-height: 27px;
+			text-align: right;
+			&:hover{
+				color: #3f797a;
+				text-decoration: none;
+			}
+		}
+		a.phone{
+			color: @color_b;
+			&:hover{
+				color: @color_b;
+			}
+		}
+	}
+	@media screen and (max-width: 1199px) {
+		.container{
+			width: 100%;
+		}
+		.link_block{
+			top: 24px;
+			left:0;
+		}
+	}
+	@media screen and (max-width: 991px) {
+		.logo{
+			margin-left: 20px;
+		}
+		.contacts{
+			padding: 27px 20px 0 0;
+		}
+	}
+	@media screen and (max-width: 800px) {
+		.second_block{
+			display: none;
+		}
+		.col-sm-4{
+			width: 50%;
+		}
+	}
+	@media screen and (max-width: 430px) {
+		.col-xs-3,
+		.col-xs-9{
+			width: 100%;
+			text-align: center;
+		}
+		.logo{
+			text-align: center;
+			margin: 0 auto;
+		}
+		.contacts{
+			padding-right: 0;
+			text-align: center;
+		}
+	}
+}
+//end header
