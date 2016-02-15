@@ -2,17 +2,14 @@
 
 /* BASE */
 // fonts
-@MullerLight: 'MullerLight',Arial, sans-serif;
-@MullerRegular: 'MullerRegular',Arial, sans-serif;
-@MullerThin: 'MullerThin',Arial, sans-serif;
-@MullerBold: 'MullerBold',Arial, sans-serif;
-
+@roboto: 'Roboto', sans-serif;
 
 // color
 @color_b: #000;
 @color_w: #fff;
-@color_text: #808080;
-@color_link:#218cc2;
+@color_title:#2d2b2c;
+@color_text: #2d2b2c;
+@color_flat_b:#3f797a;
 
 .no-svg{}
 html{
@@ -26,24 +23,21 @@ html{
 }
 body{
 	overflow-x: hidden;
-	font-family: @MullerLight;
+	font-family: @roboto;
 	color: @color_text;
-	font-size: 15px;
-	font-weight: normal;
-	line-height: 25px;
+	font-size: 18px;
+	font-weight: 400;
 }
 a{
-	font-family: @MullerLight;
-	font-weight: normal;
-	font-size: 15px;
-	color: @color_link;
-}
-
-a{
-	color: @color_link;
+	font-family: @roboto;
+	color: @color_text;
 	font-size: 16px;
+	font-weight: 400;
+	&:hover{
+		color:  #9db4c4;
+		text-decoration: underline;
+	}
 }
-
 .clear{
 	:after{
 		content: '';
@@ -79,16 +73,19 @@ img{
 	-ms-user-select: none;
 	user-select: none;
 
-	color:  #2a2a2a;
-	font-size: 16px;
+	border-radius: 3px;
+	background:  #ec7964;
+	width: 320px;
+	height: 60px;
+
+	font-family: @roboto;
+	color:  @color_w;
+	font-size: 20px;
 	font-weight: 400;
 	text-align: center;
 	line-height: 32px;
 
 	z-index: 84;
-
-	width: 208px;
-	height: 49px;
 }
 .btn:active{
 	top: 1px;
