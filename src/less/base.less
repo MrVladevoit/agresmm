@@ -1,0 +1,103 @@
+/* ! GP-STUDIO */
+
+/* BASE */
+// fonts
+@MullerLight: 'MullerLight',Arial, sans-serif;
+@MullerRegular: 'MullerRegular',Arial, sans-serif;
+@MullerThin: 'MullerThin',Arial, sans-serif;
+@MullerBold: 'MullerBold',Arial, sans-serif;
+
+
+// color
+@color_b: #000;
+@color_w: #fff;
+@color_text: #808080;
+@color_link:#218cc2;
+
+.no-svg{}
+html{
+	font-size: 100%;
+	@media screen and (max-width: 319px) {
+		width: 320px;
+	}
+	@media screen and (max-width: 240px) {
+		width: 225px;
+	}
+}
+body{
+	overflow-x: hidden;
+	font-family: @MullerLight;
+	color: @color_text;
+	font-size: 15px;
+	font-weight: normal;
+	line-height: 25px;
+}
+a{
+	font-family: @MullerLight;
+	font-weight: normal;
+	font-size: 15px;
+	color: @color_link;
+}
+
+a{
+	color: @color_link;
+	font-size: 16px;
+}
+
+.clear{
+	:after{
+		content: '';
+		clear:both;
+		display: table;
+	}
+}
+img{
+	max-width: 100%;
+}
+
+/* BTN */
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus {
+	outline: none;
+}
+
+.btn{
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	-ms-touch-action: manipulation;
+	touch-action: manipulation;
+	cursor: pointer;
+
+	white-space: nowrap;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+
+	color:  #2a2a2a;
+	font-size: 16px;
+	font-weight: 400;
+	text-align: center;
+	line-height: 32px;
+
+	z-index: 84;
+
+	width: 208px;
+	height: 49px;
+}
+.btn:active{
+	top: 1px;
+	outline: none;
+}
+// contaiiner screen > 1920px
+@media screen and (min-width: 1920px) {
+	.container{
+		width: 1430px;
+	}
+}
+/* END BASE */
