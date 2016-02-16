@@ -2695,6 +2695,112 @@ img {
     background-size: cover;
   }
 }
+.reviews {
+  background: url(../images/reviews_bg.png) no-repeat center, #efc271;
+  background-size: cover;
+  padding-bottom: 110px;
+}
+.reviews .title_block h2 {
+  margin-bottom: 34px;
+}
+@media all and (-webkit-min-device-pixel-ratio: 1.5) {
+  .reviews {
+    background: url(../images/reviews_bg@2x.png) no-repeat center, #efc271;
+    background-size: cover;
+  }
+}
+.block_review {
+  position: relative;
+  width: 410px;
+  height: 210px;
+  margin-right: 20px;
+  margin-bottom: 60px;
+  background: #eef1f6;
+  float: left;
+}
+.block_review:nth-child(2),
+.block_review:nth-child(4) {
+  margin-left: 132px;
+}
+.block_review .block_image {
+  position: absolute;
+  left: -112px;
+  display: block;
+  width: 224px;
+  height: 210px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 10px solid #eef1f6;
+}
+.block_review .block_image:hover .caption {
+  -webkit-transition: .4s ease;
+  -moz-transition: .4s ease;
+  -ms-transition: .4s ease;
+  -o-transition: .4s ease;
+  transition: .4s ease;
+  visibility: visible;
+  opacity: 1;
+}
+.block_review .caption {
+  position: absolute;
+  top: 0;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background: rgba(131, 154, 170, 0.72);
+  border-radius: 50%;
+  text-align: center;
+  padding: 35% 0;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: .4s ease;
+  -moz-transition: .4s ease;
+  -ms-transition: .4s ease;
+  -o-transition: .4s ease;
+  transition: .4s ease;
+}
+.block_review .caption a {
+  font-family: Roboto;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+}
+.block_review .caption a:hover {
+  color: #fff;
+}
+.block_review .caption i {
+  color: #fff;
+  text-align: center;
+}
+.block_review .block_text {
+  padding-left: 117px;
+  padding-right: 27px;
+  padding-top: 38px;
+  text-align: left;
+}
+.block_review .block_text p {
+  margin-bottom: 4px;
+  line-height: 21px;
+}
+.block_review .block_text p span {
+  font-size: 22px;
+}
+.block_review.block_review_right {
+  float: right;
+  margin-right: 120px;
+}
+.block_review.block_review_right .block_image {
+  right: -112px;
+  left: auto;
+}
+.block_review.block_review_right .block_text {
+  padding-right: 117px;
+  padding-left: 27px;
+}
+.block_review.block_review_right .block_text p {
+  text-align: right;
+}
 .slider {
   padding-top: 37px;
   width: 100%;
