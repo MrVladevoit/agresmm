@@ -22,26 +22,6 @@
 			}
 		}
 	}
-	.contacts{
-		padding: 25px 110px 0 0;
-		text-align: right;
-		a{
-			color: #3f797a;
-			font-size: 22px;
-			line-height: 27px;
-			text-align: right;
-			&:hover{
-				color: #3f797a;
-				text-decoration: none;
-			}
-		}
-		a.phone{
-			color: @color_b;
-			&:hover{
-				color: @color_b;
-			}
-		}
-	}
 	@media screen and (max-width: 1199px) {
 		.container{
 			width: 100%;
@@ -54,9 +34,6 @@
 	@media screen and (max-width: 991px) {
 		.logo{
 			margin-left: 20px;
-		}
-		.contacts{
-			padding: 27px 20px 0 0;
 		}
 	}
 	@media screen and (max-width: 800px) {
@@ -77,10 +54,33 @@
 			text-align: center;
 			margin: 0 auto;
 		}
-		.contacts{
-			padding-right: 0;
-			text-align: center;
+	}
+}
+.contacts{
+	padding: 25px 110px 0 0;
+	text-align: right;
+	a{
+		color: #3f797a;
+		font-size: 22px;
+		line-height: 27px;
+		text-align: right;
+		&:hover{
+			color: #3f797a;
+			text-decoration: none;
 		}
+	}
+	a.phone{
+		color: @color_b;
+		&:hover{
+			color: @color_b;
+		}
+	}
+	@media screen and (max-width: 991px) {
+		padding: 27px 20px 0 0;
+	}
+	@media screen and (max-width: 430px) {
+		padding-right: 0;
+		text-align: center;
 	}
 }
 //end header
