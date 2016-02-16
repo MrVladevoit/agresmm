@@ -1,0 +1,153 @@
+// blog
+.blog{
+	padding-bottom: 30px;
+	@media screen and (max-width: 1199px) {
+		.container{
+			width: 95%;
+		}
+	}
+}
+#owl-blog{
+	.owl-wrapper-outer{
+		position: relative;
+		z-index: 78;
+	}
+	.blog_article{
+		padding-left: 20px;
+		text-align: right;
+		a{
+			text-align: right;
+		}
+		.block_image{
+			position: relative;
+			width: 100%;
+			height: 232px;
+			overflow: hidden;
+			&:hover{
+				.caption{
+					bottom: 0;
+					-webkit-transition: .4s ease;
+					   -moz-transition: .4s ease;
+					    -ms-transition: .4s ease;
+					     -o-transition: .4s ease;
+					        transition: .4s ease;
+				}
+			}
+			.caption{
+				position: absolute;
+				bottom:-56px;
+				width: 100%;
+				height: 56px;
+				text-align: center;
+				background-color:  rgba(49, 59, 68, 0.84);
+				-webkit-transition: .4s ease;
+				   -moz-transition: .4s ease;
+				    -ms-transition: .4s ease;
+				     -o-transition: .4s ease;
+				        transition: .4s ease;
+				a{
+					color: @color_w;
+					font-size: 17px;
+					line-height: 56px;
+					font-weight: 400;
+					text-align: center;
+					&:hover{
+						color:@color_w;
+						text-decoration: underline;
+					}
+				}
+			}
+			@media screen and (max-width: 1199px) {
+				text-align: left;
+			}
+			@media screen and (max-width: 991px) {
+				img{
+					width: 100%;
+				}
+			}
+			@media screen and (max-width: 766px) {
+				img{
+					width: auto;
+				}
+				.caption{
+					display: none;
+				}
+			}
+		}
+		.title_block{
+			text-align: left;
+			h3{
+				margin-top: 6px;
+				font-size: 30px;
+				font-weight: 700;
+			}
+		}
+		.block_text{
+			height: 90px;
+			margin-bottom: 22px;
+			text-align: left;
+			overflow: hidden;
+			p{
+				text-align: left;
+				font-size: 16px;
+			}
+		}
+	}
+	.owl-controls{
+		position: absolute;
+		top: 35%;
+		width: 100%;
+		z-index: 76;
+		.owl-prev{
+			position: relative;
+			float: left;
+			left: -60px;
+		}
+		.owl-next{
+			position: relative;
+			float: right;
+			right: -60px;
+		}
+		.owl-buttons div{
+			border-radius: 0;
+			background: transparent;
+			opacity: 1;
+			i{
+				font-size: 60px;
+				color:@color_text;
+			}
+			&:hover{
+				opacity:0.8;
+			}
+		}
+	}
+	@media screen and (max-width: 1199px) {
+		.owl-controls{
+			.owl-prev{
+				left: -30px;
+			}
+			.owl-next{
+				right: -37px;
+			}
+		}
+	}
+	@media screen and (max-width: 767px) {
+		.owl-controls{
+			z-index: 80;
+			.owl-prev{
+				left: -5px;
+			}
+			.owl-next{
+				right: -10px;
+			}
+		}
+	}
+	@media screen and (max-width: 600px) {
+		.owl-controls{
+			.owl-prev{
+				left: -25px;
+			}
+		}
+	}
+}
+// end blog
