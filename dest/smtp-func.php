@@ -3,9 +3,9 @@
 function smtpmail($mail_to, $subject, $message, $headers='') {
 
         //Настройки почты
-        $config['smtp_username'] = 'manager@new-yearbusiness.ru';  //Смените на имя своего почтового ящика из ISPManager.
-        $config['smtp_password'] = 'xaXHOMDC';  //Измените пароль.
-        $config['smtp_from']     = 'manager@new-yearbusiness.ru'; //Ваше имя - или имя Вашего сайта. Будет показывать при прочтении в поле "От кого".
+        $config['smtp_username'] = 'manager@gp-studio.ru';  //Смените на имя своего почтового ящика из ISPManager.
+        $config['smtp_password'] = 'DVvvm5734';  //Измените пароль.
+        $config['smtp_from']     = 'GP-STUDIO'; //Ваше имя - или имя Вашего сайта. Будет показывать при прочтении в поле "От кого".
         //Обычно эти настройки менять не стоит
         $config['smtp_host']     = 'localhost';  //Сервер для отправки почты (для наших клиентов менять не требуется).
         $config['smtp_port']     = '25'; // Порт работы. Не меняйте, если не уверены.
