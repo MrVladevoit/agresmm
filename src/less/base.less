@@ -40,6 +40,14 @@ h2{
 	text-align: center;
 	text-transform: uppercase;
 }
+
+.title_block{
+	h2{
+		margin-top: 46px;
+		margin-bottom: 32px;
+		font-size: 36px;
+	}
+}
 ul{
 	padding-left: 0;
 }
@@ -66,10 +74,10 @@ a{
 	}
 }
 .clear{
-	:after{
-		content: '';
-		clear:both;
+	&:after{
+		content:'';
 		display: table;
+		clear:both;
 	}
 }
 img{

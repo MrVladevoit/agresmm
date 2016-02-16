@@ -34,6 +34,12 @@ h2 {
   text-transform: uppercase;
 }
 
+.title_block h2 {
+  margin-top: 46px;
+  margin-bottom: 32px;
+  font-size: 36px;
+}
+
 ul {
   padding-left: 0;
 }
@@ -64,10 +70,10 @@ a:visited {
   text-decoration: none;
 }
 
-.clear :after {
+.clear:after {
   content: '';
-  clear: both;
   display: table;
+  clear: both;
 }
 
 img {
@@ -2986,6 +2992,116 @@ img {
   .header .contacts {
     padding-right: 0;
     text-align: center;
+  }
+}
+
+.price {
+  background: url(../images/price_bg.png) center bottom no-repeat, #9accc3;
+  background-size: cover;
+  padding-bottom: 70px;
+}
+
+.price .price_table {
+  width: 945px;
+  margin: 0 auto;
+}
+
+.price .price_table:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.price .price_table .social_blocks {
+  display: block;
+  float: left;
+  width: 36.5%;
+}
+
+.price .price_table .social_price {
+  position: relative;
+  width: 100%;
+  height: 91.5px;
+  float: left;
+}
+
+.price .price_table .social_price p {
+  color: #fff;
+  font-size: 30px;
+  line-height: 33px;
+  font-weight: 700;
+  text-align: center;
+  padding: 5px 0 0 65px;
+}
+
+.price .price_table .social_price p span {
+  font-size: 20px;
+}
+
+.price .price_table .social_price:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -35px;
+  border: 47px solid #9accc3;
+  border-top-color: #9accc3;
+  border-bottom-color: #9accc3;
+  border-left-color: #9accc3;
+  border-right-color: transparent;
+}
+
+.price .price_table .ok-ru {
+  background: #ec9036;
+}
+
+.price .price_table .periscope {
+  background: #61bae5;
+}
+
+.price .price_table .youtube {
+  background: #e54242;
+}
+
+.price .price_table .facebook {
+  background: #3d5a98;
+}
+
+.price .price_table .price_list {
+  display: block;
+  float: left;
+  width: 63.5%;
+  height: 366px;
+  background: url(../images/price_table.png) no-repeat center;
+  background-size: 100%;
+}
+
+.price .price_table .price_list ul {
+  padding-left: 45px;
+  padding-top: 17px;
+  margin: 0;
+}
+
+.price .price_table .price_list ul li {
+  line-height: 30px;
+  text-align: left;
+}
+
+.price .description_table {
+  width: 945px;
+  margin: 0 auto;
+  margin-top: 22px;
+  padding-left: 48px;
+}
+
+.price .description_table p {
+  text-align: center;
+}
+
+@media all and (-webkit-min-device-pixel-ratio: 1.5) {
+  .price {
+    background: url(../images/price_bg@2x.png) center no-repeat, #6dbdc4;
+    background-size: cover;
   }
 }
 
