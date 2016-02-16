@@ -15,6 +15,9 @@
 			display: block;
 			float: left;
 			width: 36.5%;
+			@media screen and (max-width: 1023px) {
+				width: 100%;
+			}
 		}
 		.social_price{
 			position: relative;
@@ -44,6 +47,27 @@
 				border-left-color: #9accc3;
 				border-right-color: transparent;
 			}
+			@media screen and (max-width: 1023px) {
+				width: 25%;
+				p{
+					line-height: 22px;
+					padding: 18px 0;
+				}
+				&:before{
+					display: none;
+				}
+			}
+			@media screen and (max-width: 991px) {
+				p{
+					font-size: 25px;
+					span{
+						font-size: 18px;
+					}
+				}
+			}
+			@media screen and (max-width: 700px) {
+				width: 50%;
+			}
 		}
 		.ok-ru{
 			background: #ec9036;
@@ -62,8 +86,8 @@
 			float: left;
 			width: 63.5%;
 			height: 366px;
-			background: url(../images/price_table.png) no-repeat center;
-			background-size: 100%;
+			background: url(../images/price_table.png) no-repeat top center;
+			background-size: cover;
 			ul{
 				padding-left: 45px;
 				padding-top: 17px;
@@ -73,6 +97,39 @@
 					text-align: left;
 				}
 			}
+			@media screen and (max-width: 1023px) {
+				width: 100%;
+			}
+			@media screen and (max-width: 600px) {
+				height:335px;
+				overflow: hidden;
+				ul{
+					li{
+						font-size: 16px;
+						line-height: 27px;
+					}
+				}
+			}
+			@media screen and (max-width: 520px) {
+				ul{
+					padding-left: 25px;
+					padding-top: 5px;
+				}
+			}
+			@media screen and (max-width: 380px) {
+				height:380px;
+				ul{
+					li{
+						line-height: 24px;
+					}
+				}
+			}
+			@media screen and (max-width: 340px) {
+				height:400px;
+			}
+		}
+		@media screen and (max-width: 1023px) {
+			width: 100%;
 		}
 	}
 	.description_table{
@@ -83,11 +140,29 @@
 		p{
 			text-align: center;
 		}
+		@media screen and (max-width: 1023px) {
+			width: 100%;
+			padding-left: 0;
+		}
+		@media screen and (max-width: 700px) {
+			margin-top: 5px;
+			p{
+				font-size: 14px;
+			}
+		}
+		@media screen and (max-width: 520px) {
+			p{
+				line-height: 16px;
+			}
+		}
+	}
+	@media screen and (max-width: 380px) {
+		padding-bottom: 30px;
 	}
 }
 @media all and (-webkit-min-device-pixel-ratio: 1.5) {
 	.price {
-		background:  url(../images/price_bg@2x.png) center no-repeat,#6dbdc4;
+		background:  url(../images/price_bg@2x.png) center no-repeat,#9accc3;
 		background-size: cover;
 	}
 }

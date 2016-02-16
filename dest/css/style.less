@@ -36,6 +36,24 @@ h2 {
   margin-bottom: 32px;
   font-size: 36px;
 }
+@media screen and (max-width: 700px) {
+  .title_block h2 {
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .title_block h2 {
+    line-height: 30px;
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 340px) {
+  .title_block h2 {
+    line-height: 20px;
+    font-size: 26px;
+  }
+}
 ul {
   padding-left: 0;
 }
@@ -2303,6 +2321,140 @@ img {
     text-align: center;
   }
 }
+.portfolio {
+  background: url(../images/portfolio_bg.png) center no-repeat;
+  background-size: cover;
+  min-height: 941px;
+  padding-bottom: 70px;
+}
+.portfolio .title_block h2 {
+  margin-bottom: 10px;
+}
+.portfolio .portfolio_container {
+  width: 75%;
+  margin: 0 auto;
+}
+@media screen and (max-width: 1400px) {
+  .portfolio .portfolio_container {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .portfolio .portfolio_container {
+    width: 90%;
+  }
+}
+.portfolio .portfolio_tab {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 24px;
+  text-align: center;
+}
+.portfolio .portfolio_tab a {
+  padding: 10px;
+  margin-right: 5px;
+}
+.portfolio .portfolio_tab a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.portfolio .portfolio_tab a.active {
+  background: #3d5a98;
+  color: #fff;
+}
+@media screen and (max-width: 767px) {
+  .portfolio .portfolio_tab {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .portfolio .portfolio_tab a {
+    padding: 5px;
+    margin-right: 0px;
+  }
+}
+.portfolio .gallery li {
+  position: relative;
+  display: block;
+  float: left;
+  width: 31%;
+  height: 218px;
+  margin: 0 1%;
+  margin-bottom: 18px;
+  border-radius: 5px;
+  list-style: none;
+  overflow: hidden;
+  -webkit-transition: .4s ease;
+  -moz-transition: .4s ease;
+  -ms-transition: .4s ease;
+  -o-transition: .4s ease;
+  transition: .4s ease;
+}
+.portfolio .gallery li:hover {
+  cursor: pointer;
+  -webkit-transition: .4s ease;
+  -moz-transition: .4s ease;
+  -ms-transition: .4s ease;
+  -o-transition: .4s ease;
+  transition: .4s ease;
+}
+.portfolio .gallery li:hover .thumbnail .caption {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: .4s ease;
+  -moz-transition: .4s ease;
+  -ms-transition: .4s ease;
+  -o-transition: .4s ease;
+  transition: .4s ease;
+}
+.portfolio .gallery li:nth-child(3n+3) {
+  margin-right: 0;
+}
+.portfolio .gallery li .thumbnail .caption {
+  position: absolute;
+  display: inline-block;
+  visibility: hidden;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  top: 0;
+  left: 0;
+  text-align: center;
+  background: rgba(61, 90, 152, 0.5);
+  -webkit-transition: .4s ease;
+  -moz-transition: .4s ease;
+  -ms-transition: .4s ease;
+  -o-transition: .4s ease;
+  transition: .4s ease;
+}
+.portfolio .gallery li .thumbnail .caption a {
+  color: #fff;
+  line-height: 218px;
+  font-weight: 400;
+  text-align: center;
+}
+@media screen and (max-width: 800px) {
+  .portfolio .gallery li {
+    width: 48%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .portfolio .gallery li {
+    width: 98%;
+  }
+}
+@media screen and (max-width: 991px) {
+  .portfolio .container {
+    width: 100%;
+  }
+}
+@media all and (-webkit-min-device-pixel-ratio: 1.5) {
+  .portfolio {
+    background: url(../images/portfolio_bg@2x.png) center no-repeat;
+    background-size: cover;
+  }
+}
 .price {
   background: url(../images/price_bg.png) center bottom no-repeat, #9accc3;
   background-size: cover;
@@ -2321,6 +2473,11 @@ img {
   display: block;
   float: left;
   width: 36.5%;
+}
+@media screen and (max-width: 1023px) {
+  .price .price_table .social_blocks {
+    width: 100%;
+  }
 }
 .price .price_table .social_price {
   position: relative;
@@ -2351,6 +2508,31 @@ img {
   border-left-color: #9accc3;
   border-right-color: transparent;
 }
+@media screen and (max-width: 1023px) {
+  .price .price_table .social_price {
+    width: 25%;
+  }
+  .price .price_table .social_price p {
+    line-height: 22px;
+    padding: 18px 0;
+  }
+  .price .price_table .social_price:before {
+    display: none;
+  }
+}
+@media screen and (max-width: 991px) {
+  .price .price_table .social_price p {
+    font-size: 25px;
+  }
+  .price .price_table .social_price p span {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .price .price_table .social_price {
+    width: 50%;
+  }
+}
 .price .price_table .ok-ru {
   background: #ec9036;
 }
@@ -2368,8 +2550,8 @@ img {
   float: left;
   width: 63.5%;
   height: 366px;
-  background: url(../images/price_table.png) no-repeat center;
-  background-size: 100%;
+  background: url(../images/price_table.png) no-repeat top center;
+  background-size: cover;
 }
 .price .price_table .price_list ul {
   padding-left: 45px;
@@ -2380,6 +2562,45 @@ img {
   line-height: 30px;
   text-align: left;
 }
+@media screen and (max-width: 1023px) {
+  .price .price_table .price_list {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .price .price_table .price_list {
+    height: 335px;
+    overflow: hidden;
+  }
+  .price .price_table .price_list ul li {
+    font-size: 16px;
+    line-height: 27px;
+  }
+}
+@media screen and (max-width: 520px) {
+  .price .price_table .price_list ul {
+    padding-left: 25px;
+    padding-top: 5px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .price .price_table .price_list {
+    height: 380px;
+  }
+  .price .price_table .price_list ul li {
+    line-height: 24px;
+  }
+}
+@media screen and (max-width: 340px) {
+  .price .price_table .price_list {
+    height: 400px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .price .price_table {
+    width: 100%;
+  }
+}
 .price .description_table {
   width: 945px;
   margin: 0 auto;
@@ -2389,9 +2610,33 @@ img {
 .price .description_table p {
   text-align: center;
 }
+@media screen and (max-width: 1023px) {
+  .price .description_table {
+    width: 100%;
+    padding-left: 0;
+  }
+}
+@media screen and (max-width: 700px) {
+  .price .description_table {
+    margin-top: 5px;
+  }
+  .price .description_table p {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 520px) {
+  .price .description_table p {
+    line-height: 16px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .price {
+    padding-bottom: 30px;
+  }
+}
 @media all and (-webkit-min-device-pixel-ratio: 1.5) {
   .price {
-    background: url(../images/price_bg@2x.png) center no-repeat, #6dbdc4;
+    background: url(../images/price_bg@2x.png) center no-repeat, #9accc3;
     background-size: cover;
   }
 }
