@@ -24,3 +24,7 @@ $(document).ready(function(){
    });
    return false;
 });
+// up
+  $(document).ready(function() {
+    $().UItoTop({ easingType: 'easeOutQuart' });
+  });
