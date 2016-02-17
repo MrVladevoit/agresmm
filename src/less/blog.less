@@ -1,7 +1,8 @@
 // blog
 .blog{
+	position: relative;
 	padding-bottom: 30px;
-	@media screen and (max-width: 1199px) {
+	@media screen and (max-width: 1199px) {padding-bottom: 55px;
 		.container{
 			width: 95%;
 		}
@@ -159,6 +160,25 @@
 				text-decoration: underline;
 			}
 		}
+	}
+}
+.spaceman{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	display: block;
+	width: 125px;
+	height:81px;
+	background: url(../images/spaceman.png) no-repeat center;
+	background-size: cover;
+	@media screen and (max-width: 1199px) {
+		left: 50%;
+	}
+	@media screen and (max-width: 767px) {
+		left: 60%;
+	}
+	@media screen and (max-width: 599px) {
+		left: 20px;
 	}
 }
 // end blog

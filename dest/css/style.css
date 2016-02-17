@@ -1595,10 +1595,15 @@ img {
 /* END BASE */
 
 .blog {
+  position: relative;
   padding-bottom: 30px;
 }
 
 @media screen and (max-width: 1199px) {
+  .blog {
+    padding-bottom: 55px;
+  }
+
   .blog .container {
     width: 95%;
   }
@@ -1773,6 +1778,35 @@ img {
 .block_image .caption a:hover {
   color: #fff;
   text-decoration: underline;
+}
+
+.spaceman {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: block;
+  width: 125px;
+  height: 81px;
+  background: url(../images/spaceman.png) no-repeat center;
+  background-size: cover;
+}
+
+@media screen and (max-width: 1199px) {
+  .spaceman {
+    left: 50%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .spaceman {
+    left: 60%;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .spaceman {
+    left: 20px;
+  }
 }
 
 /* Font Awesome */
