@@ -1178,9 +1178,6 @@ body.stop-scrolling {
     text-align: center;
   }
 }
-.widget_nav {
-  margin-bottom: 25px;
-}
 .widget_nav .nav-bar-aside ul li {
   list-style: none;
 }
@@ -1193,6 +1190,36 @@ body.stop-scrolling {
 .widget_nav .nav-bar-aside ul li a:hover {
   color: #9db4c4;
   text-decoration: underline;
+}
+.widget_social {
+  margin-bottom: 25px;
+}
+.widget_post .block_image {
+  width: 100%;
+  height: 177px;
+}
+.widget_post .entry_content .entry_title {
+  margin: 0;
+}
+.widget_post .entry_content .entry_title a {
+  color: #313b44;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: left;
+}
+.widget_post .entry_content .entry_title a:hover {
+  color: #9db4c4;
+  text-decoration: none;
+}
+.widget_post .entry_content .block_text {
+  height: 108px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+.widget_post .entry_content .block_text p {
+  font-size: 14px;
+  font-weight: 400;
+  text-align: left;
 }
 /* ! GP-STUDIO */
 /* BASE */
@@ -1319,6 +1346,12 @@ img {
 .btn:hover {
   color: #fff;
   background: #f58d7a;
+}
+.btn:focus {
+  color: #fff;
+}
+.btn:active {
+  color: #fff;
 }
 .btn:active {
   top: 1px;
@@ -3905,12 +3938,12 @@ img {
 .header.header_page .contacts {
   padding: 25px 0 0 0;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
   .header.header_page .container {
     width: 750px;
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 992px) and (max-width: 1199px) {
   .header.header_page .container {
     width: 970px;
   }
@@ -5075,6 +5108,39 @@ img {
   .block_review.block_review_right .block_image {
     width: 130px;
   }
+}
+.post_article.single_post .entry_title {
+  color: #313b44;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: left;
+}
+.post_article.single_post .entry_date {
+  padding-top: 10px;
+  padding-bottom: 19px;
+}
+.post_article.single_post .block_image {
+  width: 100%;
+  height: 422px;
+}
+.post_article.single_post .entry_content {
+  width: 100%;
+  padding: 5px 15px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 5px 0px rgba(183, 183, 183, 0.22);
+}
+.post_article.single_post .entry_content h2 {
+  color: #313b44;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: left;
+}
+.post_article.single_post .entry_content p {
+  color: #313b44;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: justify;
+  margin-bottom: 19px;
 }
 .slider {
   padding-top: 37px;
