@@ -2,6 +2,14 @@
 .page_content{
 	padding-top: 33px;
 	background: @color_w;
+	@media screen and (max-width: 991px) {
+		padding-bottom: 30px;
+	}
+	@media screen and (max-width: 380px) {
+		.pagination-lg>li>a, .pagination-lg>li>span{
+			padding: 8px 14px;
+		}
+	}
 }
 .post_article{
 	padding-bottom: 30px;
@@ -29,6 +37,7 @@
 			height: 246px;
 			img{
 				width: 100%;
+				height: auto;
 			}
 		}
 		.block_text{
@@ -50,6 +59,23 @@
 			.btn{
 				width: 208px;
 				height: 49px;
+			}
+		}
+	}
+	@media screen and (max-width: 767px) {
+		.entry_content{
+			.block_image{
+				width: 300px;
+			}
+			.block_text{
+				width: 100%;
+				float: left;
+				margin-top: 20px;
+				padding-left: 0;
+			}
+			.link_block{
+				width: 100%;
+				float: left;
 			}
 		}
 	}

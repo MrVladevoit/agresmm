@@ -41,14 +41,14 @@
 <header id="header" class="header header_page">
 	<div class="container">
 		<div class="row">
-			<div class="col-xs-3 col-sm-6">
+			<div class="col-xs-4 col-sm-6">
 				<div class="logo">
 					<a href="/">
 						<img src="images/logo.png" alt="logo">
 					</a>
 				</div>
 			</div>
-			<div class="col-xs-9 col-sm-6 contacts">
+			<div class="col-xs-8 col-sm-6 contacts">
 				<a href="tel:+79884415521" class="phone">+7 (988) 441-55-21</a> <br>
 				<a href="mailto:info-center@mail.ru">info-center@mail.ru</a>
 			</div>
@@ -59,8 +59,8 @@
 <div class="page_content" role="main" id="content">
 	<div class="container">
 		<div class="row">
-			<div id="primary" class="col-md-8 post_list">
-								<main id="main" role="main" class="site_main clear">
+			<div id="primary" class="col-xs-12 col-md-8 post_list">
+				<main id="main" role="main" class="site_main clear">
 					<!-- article -->
 					<article class="post_article clear">
 						<header class="entry_header">
@@ -197,20 +197,33 @@
 					</ul>
 				</nav>
 			</div>
-			<div class="col-md-4 widget-area" id="sidebar-secondary">
-								<aside id="search-3" class="widget widget_search">
-					<form role="search" method="get" class="search-form" action="http://shofacademy.com/">
-						<label>
+			<div class="col-xs-12 col-md-4 widget-area" id="sidebar-secondary">
+				<aside id="search-3" class="widget widget_search">
+					<form role="search" method="get" class="search-form clear" action="">
+<!-- 						<label>
 							<span class="screen-reader-text">Найти:</span>
-							<input type="search" class="search-field" placeholder="Поиск…" value="" name="s" title="Найти:">
-						</label>
-						<input type="submit" class="search-submit" value="Поиск">
+						</label> -->
+						<input type="search" class="search-field form-control" placeholder="Введите данные для поиска..." value="" name="s" title="Найти:">
+						<input type="submit" class="search-submit btn" value="Поиск">
 					</form>
 				</aside>
-				
-				
-								<aside id="social" class="widget widget_social">
-					<img src="images/blog/vk-widjet.png" alt="vk-widjet">
+				<aside id="" class="widget widget_nav">
+					<div class="entry_header">
+						<h2>Перейти на:</h2>
+					</div>
+					<nav class="nav-bar-aside">
+						<ul>
+							<li><a href="/">Главная</a></li>
+							<li><a href="page_news.html">Блог</a></li>
+							<li><a href="#">Наши цены</a></li>
+							<li><a href="#">Наши работы</a></li>
+							<li><a href="#">Связаться с нами</a></li>
+						</ul>
+					</nav>
+				</aside>
+
+				<aside id="social" class="widget widget_social">
+					<img src="images/vk.png" alt="vk-widjet">
 				</aside>
 			</div>
 		</div>
