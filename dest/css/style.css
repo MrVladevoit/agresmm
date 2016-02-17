@@ -1258,7 +1258,7 @@ body.stop-scrolling {
   }
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 991px) {
   .widget-area {
     text-align: center;
   }
@@ -1352,7 +1352,7 @@ body.stop-scrolling {
   text-transform: inherit;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 991px) {
   .entry_header {
     text-align: center;
   }
@@ -1387,6 +1387,11 @@ body.stop-scrolling {
   height: 177px;
 }
 
+.widget_post .block_image img {
+  width: 100%;
+  height: auto;
+}
+
 .widget_post .entry_content .entry_title {
   margin: 0;
 }
@@ -1413,6 +1418,18 @@ body.stop-scrolling {
   font-size: 14px;
   font-weight: 400;
   text-align: left;
+}
+
+@media screen and (max-width: 1199px) {
+  .widget_post .block_image {
+    height: 120px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .widget_post {
+    display: none;
+  }
 }
 
 /* ! GP-STUDIO */
@@ -6233,6 +6250,40 @@ img {
   font-weight: 400;
   text-align: justify;
   margin-bottom: 19px;
+}
+
+@media screen and (min-width: 1920px) {
+  .post_article.single_post .block_image img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .post_article.single_post .block_image {
+    height: 350px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .post_article.single_post .block_image {
+    height: 260px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .post_article.single_post .block_image {
+    height: 190px;
+  }
+
+  .post_article.single_post .entry_content {
+    padding: 5px 5px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .post_article.single_post .block_image {
+    height: 160px;
+  }
 }
 
 .slider {
